@@ -1,15 +1,26 @@
 ## Trabajo Final
 
 ### Tema:
-* Generar una aplicación usando herramienas low-code
+* Generar una aplicación usando herramienas low-code (OpenXava)
+- Aplicación cooperativa: Gestionar rutas, buses, choferes...
+
 
 ### Pasos sugereridos:
 
 * Trabajo grupal (2 participantes)
+
 * Realizar una revisión de las posibles tecnologías a usar.
+
 * Tomar de preferencia plataformas open-source como solución.
 * Realizar una planificación para 3 semanas.
+- 1. Realizar modelos de clases.
+- 2. Realizar programación.
+- 3. Trabajo terminado.
+
 * Plantear tres avances.
+- 1. Presentar modelos de clases.
+- 2. Presentar código avanzado.
+- 3. Presentar producto.
 
 ### Importante
 * En la semana 8, se expondrá el trabajo realizado.
