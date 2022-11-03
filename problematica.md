@@ -3,6 +3,7 @@
 ### Tema:
 * Generar una aplicación usando herramienas low-code (OpenXava)
 - Aplicación cooperativa: Gestionar rutas, buses, choferes...
+- El problema que se pretende resolver es la gestión de una cooperativa de buses interprovincial en cuanto a las unidades (buses), empleados con sus roles( chofer, secretaria, ayudante), rutas y horarios.
 
 
 ### Pasos sugereridos:
