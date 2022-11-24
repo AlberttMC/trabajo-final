@@ -1,0 +1,17 @@
+/*C1*/SET SCHEMA SYSTEM_LOBS
+INSERT INTO BLOCKS VALUES(0,2147483647,0)
+COMMIT
+/*C2*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C3*/SET SCHEMA PUBLIC
+create table Bus (oid varchar(32) not null, estadoActivo boolean, numeroEjes integer, placa varchar(10), primary key (oid))
+create table Empleado (oid varchar(32) not null, apellido varchar(255), cedula varchar(255), correo varchar(255), estadoActivo boolean, nombre varchar(255), telefono varchar(255), tipoEmpleado integer, primary key (oid))
+create table IMAGES (ID varchar(32) not null, GALLERY varchar(32), image varbinary(16777216), primary key (ID))
+create table OXDISCUSSIONCOMMENTS (id varchar(32) not null, comment clob(16777216), discussionId varchar(32), time timestamp, userName varchar(30), primary key (id))
+create table Ruta (oid varchar(32) not null, destino varchar(255), estadoActivo boolean, origen varchar(255), primary key (oid))
+create table Turno (oid varchar(32) not null, fechaLlegada date, fechaSalida date, horaLlegada varchar(255), horaSalida varchar(255), ayudante_oid varchar(32), bus_oid varchar(32), conductor_oid varchar(32), ruta_oid varchar(32), primary key (oid))
+create index IDXbhlx4vunn24ym1tbrlgq8g30m on OXDISCUSSIONCOMMENTS (discussionId)
+alter table Turno add constraint FKpdvhoyuhj8a3b0622pbj5ayar foreign key (ayudante_oid) references Empleado
+alter table Turno add constraint FK4ipn7qqdh4olnfhkv6gvnjkh3 foreign key (bus_oid) references Bus
+alter table Turno add constraint FK9fsgutm9eilg1hjyg46ppvx6i foreign key (conductor_oid) references Empleado
+alter table Turno add constraint FK30laqkndpnu0pr7kkphy5mla8 foreign key (ruta_oid) references Ruta
