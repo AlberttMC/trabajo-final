@@ -1,6 +1,0 @@
-/*C4*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C5*/SET SCHEMA PUBLIC
-alter table Usuario add column claveUsuario varchar(255)
-alter table Usuario add column nomUsuario varchar(255)
-alter table Usuario add column tipoUsuario varchar(255)
